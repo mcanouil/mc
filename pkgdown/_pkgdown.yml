@@ -1,0 +1,14 @@
+authors:
+  Mickaël Canouil:
+    href: http://mickael.canouil.fr
+url: http://m.canouil.fr/mc/
+template:
+  bootstrap: 4
+  bootswatch: litera
+  bslib:
+    base_font:
+      google: "Alegreya Sans"
+    heading_font:
+      google: "Alegreya Sans"
+    bg: "#333333"
+    fg: "#fafafa"
