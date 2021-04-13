@@ -17,13 +17,8 @@
 #'
 #' }
 #'
-#' @name ggtheme
-#' @aliases NULL
-NULL
-
-#' @include theme_mc.R
+#' @name theme_mc
 #' @export
-#' @rdname ggtheme
 theme_mc <- function(
   base_size = 11,
   base_family = "",
@@ -181,7 +176,7 @@ theme_mc <- function(
 }
 
 #' @export
-#' @rdname ggtheme
+#' @rdname theme_mc
 theme_mc_md <- function(
   base_size = 11,
   base_family = "",
