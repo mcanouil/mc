@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Changelog • mc</title>
+<title>Complete MC themes — ggtheme • mc</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -19,7 +19,8 @@
 <!-- bootstrap-toc --><link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css">
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <link href="../syntax-highlighting.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Changelog">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Complete MC themes — ggtheme">
+<meta property="og:description" content="These are complete themes with or without markdown (i.e., ggtext).">
 <meta property="og:image" content="http://m.canouil.fr/mc/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -57,40 +58,65 @@
       </ul>
 </div>
   </div>
-</nav><div class="container template-news">
+</nav><div class="container template-reference-topic">
 <div class="row">
   <div class="col-md-9 contents">
     <img src="../package-logo.png" class="pkg-logo" alt=""><div class="page-header pb-2 mt-4 mb-2 border-bottom toc-ignore">
-      <h1 class="display-4" data-toc-skip>Changelog <small></small>
-</h1>
-      <small>Source: <a href="https://github.com/mcanouil/mc/blob/master/NEWS.md"><code>NEWS.md</code></a></small>
+    <h1 class="display-4">Complete MC themes</h1>
+    <small class="dont-index">Source: <a href="https://github.com/mcanouil/mc/blob/master/R/theme_mc.R"><code>R/theme_mc.R</code></a></small>
+    <div class="d-none name"><code>ggtheme.Rd</code></div>
     </div>
 
-    <div id="mc-0009000" class="section level1">
-<h1 class="pb-2 mt-4 mb-2 border-bottom" data-toc-text="0.0.0.9000">
-<a href="#mc-0009000" class="anchor"></a>mc 0.0.0.9000</h1>
-<ul>
-<li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
-<li>Added <code>R/theme.R</code>,
-<ul>
-<li>
-<code>theme_md()</code>, a theme with <code><a href="https://rdrr.io/r/base/c.html" class="external-link">c("</a><a href="https://github.com/mcanouil/mc/issues/333333">#333333</a>", "<a href="https://github.com/mcanouil/mc/issues/7">#7</a>F7F7F", "#FAFAFA")</code> palette from background to foreground.</li>
-<li>
-<code><a href="../reference/ggtheme.html">theme_mc_md()</a></code>, <code><a href="../reference/ggtheme.html">theme_mc()</a></code> with markdown ability using <code>ggtext</code> (if installed).</li>
-</ul>
-</li>
-</ul>
-</div>
-  </div>
+    <div class="ref-description">
+    <p>These are complete themes with or without markdown (<em>i.e.</em>, <code>ggtext</code>).</p>
+    </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <pre class="usage"><code class="sourceCode R"><span class="fu">theme_mc</span><span class="op">(</span>
+  base_size <span class="op">=</span> <span class="fl">11</span>,
+  base_family <span class="op">=</span> <span class="st">""</span>,
+  base_line_size <span class="op">=</span> <span class="va">base_size</span><span class="op">/</span><span class="fl">22</span>,
+  base_rect_size <span class="op">=</span> <span class="va">base_size</span><span class="op">/</span><span class="fl">22</span>
+<span class="op">)</span>
+
+<span class="fu">theme_mc_md</span><span class="op">(</span>
+  base_size <span class="op">=</span> <span class="fl">11</span>,
+  base_family <span class="op">=</span> <span class="st">""</span>,
+  base_line_size <span class="op">=</span> <span class="va">base_size</span><span class="op">/</span><span class="fl">22</span>,
+  base_rect_size <span class="op">=</span> <span class="va">base_size</span><span class="op">/</span><span class="fl">22</span>
+<span class="op">)</span></code></pre>
+
+    <h2>Arguments</h2>
+    <dl class="row" id="ref-arguments">
+<dt class="col-sm-3" id="ref-arguments name">base_size</dt>
+      <dd class="col-sm-9" id="ref-arguments desc"><p>base font size, given in pts.</p></dd>
+    <dt class="col-sm-3" id="ref-arguments name">base_family</dt>
+      <dd class="col-sm-9" id="ref-arguments desc"><p>base font family</p></dd>
+    <dt class="col-sm-3" id="ref-arguments name">base_line_size</dt>
+      <dd class="col-sm-9" id="ref-arguments desc"><p>base size for line elements</p></dd>
+    <dt class="col-sm-3" id="ref-arguments name">base_rect_size</dt>
+      <dd class="col-sm-9" id="ref-arguments desc"><p>base size for rect elements</p></dd>
+    </dl>
+<h2 class="hasAnchor" id="details">
+<a class="anchor" href="#details"></a>Details</h2>
+
+    
+<dl>
+<dt><code>theme_mc()</code></dt>
+<dd><p>Theme with <code><a href="https://rdrr.io/r/base/c.html">c("#333333", "#7F7F7F", "#FAFAFA")</a></code> palette from background to foreground.</p></dd>
+
+<dt><code>theme_mc_md()</code></dt>
+<dd><p><code>theme_mc()</code> with markdown ability using <code>ggtext</code> (if installed).</p></dd>
+
+
+</dl>
+</div>
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="sticky-top">
     <nav id="toc"><h2 data-toc-skip>Contents</h2>
 
     </nav>
 </div>
   </div>
-
 </div>
 
 
