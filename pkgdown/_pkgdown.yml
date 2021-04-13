@@ -12,3 +12,5 @@ template:
       google: "Alegreya Sans"
     bg: "#333333"
     fg: "#fafafa"
+    code_bg: "#fafafa"
+    code_color: "#333333"
