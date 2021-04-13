@@ -6,6 +6,8 @@
 \alias{mc-package}
 \title{mc: Mickaël Canouil}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 Bunch of functions mostly for my personal use.
 }
 \seealso{
