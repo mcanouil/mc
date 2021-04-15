@@ -6,7 +6,7 @@
 \title{Check Recursively Directories For Uncommitted}
 \usage{
 check_commit(
-  root_directory = "/disks/PROJECT",
+  root_directory = ".",
   user = NULL,
   group = NULL,
   commit = FALSE,
@@ -14,7 +14,7 @@ check_commit(
 )
 
 cc(
-  root_directory = "/disks/PROJECT",
+  root_directory = ".",
   user = NULL,
   group = NULL,
   commit = FALSE,
