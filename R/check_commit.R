@@ -34,10 +34,14 @@ check_commit <- function(
     )
   }
   out <- dta[dta[["commit"]], c("path", "user", "group", "access_time")]
-  files_tmp <- lapply(out[["path"]], function(x) gert::git_status(repo = x))
-  out <- cbind(out[rep(seq_along(files_tmp), sapply(files_tmp, nrow)), ], do.call("rbind", files_tmp))
-  class(out) <- c("tbl_df", "tbl", "data.frame")
-  out[c("path", "file", "status", "staged", "user", "group", "access_time")]
+  if (nrow(out) > 0) {
+    files_tmp <- lapply(out[["path"]], function(x) gert::git_status(repo = x))
+    out <- cbind(out[rep(seq_along(files_tmp), sapply(files_tmp, nrow)), ], do.call("rbind", files_tmp))
+    class(out) <- c("tbl_df", "tbl", "data.frame")
+    out[c("path", "file", "status", "staged", "user", "group", "access_time")]
+  } else {
+    out[c("path", "user", "group", "access_time")]
+  }
 }
 
 #' @rdname check_commit
