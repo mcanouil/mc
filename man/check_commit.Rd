@@ -7,14 +7,16 @@
 \usage{
 check_commit(
   root_directory = "/disks/PROJECT",
-  group = "staff",
+  user = NULL,
+  group = NULL,
   commit = FALSE,
   push = FALSE
 )
 
 cc(
   root_directory = "/disks/PROJECT",
-  group = "staff",
+  user = NULL,
+  group = NULL,
   commit = FALSE,
   push = FALSE
 )
@@ -22,7 +24,7 @@ cc(
 \arguments{
 \item{root_directory}{A directory in which there are git subdirectories.}
 
-\item{group}{A UNIX group to filter.}
+\item{group}{A (vector of) group(s) to keep or exclude with prefix "!"..}
 
 \item{commit}{A boolean. if \code{TRUE}, commits uncommitted files.}
 
