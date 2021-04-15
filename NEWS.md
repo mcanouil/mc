@@ -5,4 +5,4 @@
     + `theme_mc()`, a theme with `c("#333333", "#7F7F7F", "#FAFAFA")` palette from background to foreground.
     + `theme_mc_md()`, `theme_mc()` with markdown ability using `ggtext` (if installed).
 * Added  `R/check_commit.R`,
-    +  `check_commiy()`, a function to recursively checks uncommitted files in subdirectories.
+    +  `check_commit()`, a function to recursively checks uncommitted files in subdirectories.

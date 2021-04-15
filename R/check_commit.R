@@ -40,7 +40,7 @@ check_commit <- function(
 
   out[["files"]] <- lapply(out[["path"]], function(x) gert::git_status(repo = x))
 
-  out[, names(res)[c(1, ncol(res), 2:(ncol(res) - 1))]]
+  out[, names(out)[c(1, ncol(out), 2:(ncol(out) - 1))]]
 }
 
 #' @rdname check_commit
