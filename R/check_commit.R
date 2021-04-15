@@ -11,7 +11,7 @@
 #' @name check_commit
 #' @export
 check_commit <- function(
-  root_directory = "/disks/PROJECT",
+  root_directory = ".",
   user = NULL,
   group = NULL,
   commit = FALSE,
@@ -22,13 +22,13 @@ check_commit <- function(
 
   if (!is.null(user)) {
     user_keep <- unique(setdiff(dta[["user"]], gsub("^!", "", grep("!", user, fixed = TRUE, value = TRUE))))
-    user_keep <- intersect(user_keep, grep("[^!]", user, fixed = TRUE, value = TRUE))
+    if (any(!grepl("^!", user))) user_keep <- intersect(user_keep, user[!grepl("^!", user)])
     dta <- dta[dta[["user"]] %in% user_keep, ]
   }
 
   if (!is.null(group)) {
     group_keep <- unique(setdiff(dta[["group"]], gsub("^!", "", grep("!", group, fixed = TRUE, value = TRUE))))
-    group_keep <- intersect(group_keep, grep("[^!]", group, fixed = TRUE, value = TRUE))
+    if (any(!grepl("^!", group))) group_keep <- intersect(group_keep, group[!grepl("^!", group)])
     dta <- dta[dta[["group"]] %in% group_keep, ]
   }
 
@@ -65,3 +65,4 @@ check_commit <- function(
 #' @rdname check_commit
 #' @export
 cc <- check_commit
+
