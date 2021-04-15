@@ -73,14 +73,16 @@
 
     <pre class="usage"><code class="sourceCode R"><span class="fu">check_commit</span><span class="op">(</span>
   root_directory <span class="op">=</span> <span class="st">"/disks/PROJECT"</span>,
-  group <span class="op">=</span> <span class="st">"staff"</span>,
+  user <span class="op">=</span> <span class="cn">NULL</span>,
+  group <span class="op">=</span> <span class="cn">NULL</span>,
   commit <span class="op">=</span> <span class="cn">FALSE</span>,
   push <span class="op">=</span> <span class="cn">FALSE</span>
 <span class="op">)</span>
 
 <span class="fu">cc</span><span class="op">(</span>
   root_directory <span class="op">=</span> <span class="st">"/disks/PROJECT"</span>,
-  group <span class="op">=</span> <span class="st">"staff"</span>,
+  user <span class="op">=</span> <span class="cn">NULL</span>,
+  group <span class="op">=</span> <span class="cn">NULL</span>,
   commit <span class="op">=</span> <span class="cn">FALSE</span>,
   push <span class="op">=</span> <span class="cn">FALSE</span>
 <span class="op">)</span></code></pre>
@@ -90,7 +92,7 @@
 <dt class="col-sm-3" id="ref-arguments name">root_directory</dt>
       <dd class="col-sm-9" id="ref-arguments desc"><p>A directory in which there are git subdirectories.</p></dd>
     <dt class="col-sm-3" id="ref-arguments name">group</dt>
-      <dd class="col-sm-9" id="ref-arguments desc"><p>A UNIX group to filter.</p></dd>
+      <dd class="col-sm-9" id="ref-arguments desc"><p>A (vector of) group(s) to keep or exclude with prefix "!"..</p></dd>
     <dt class="col-sm-3" id="ref-arguments name">commit</dt>
       <dd class="col-sm-9" id="ref-arguments desc"><p>A boolean. if <code>TRUE</code>, commits uncommitted files.</p></dd>
     <dt class="col-sm-3" id="ref-arguments name">push</dt>
