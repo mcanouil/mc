@@ -29,10 +29,6 @@ install.packages("mc")
 remotes::install_github("mcanouil/mc")
 ```
 
-## Example
-
-…
-
 ## Code of Conduct
 
 Please note that the `mc` project is released with a [Contributor Code
