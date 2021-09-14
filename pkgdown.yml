@@ -1,8 +1,8 @@
 pandoc: 2.7.3
 pkgdown: 1.6.1.9001
-pkgdown_sha: 008676176f527e8920d9427344d0bf378c2abcff
+pkgdown_sha: 705ff7c650bb1c7d46d35e72f27ad093689e2f29
 articles: {}
-last_built: 2021-05-12T12:59Z
+last_built: 2021-09-14T09:35Z
 urls:
   reference: http://m.canouil.fr/mc/reference
   article: http://m.canouil.fr/mc/articles
