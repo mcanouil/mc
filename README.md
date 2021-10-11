@@ -7,7 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![GitHub
+![License](https://img.shields.io/github/license/mcanouil/mc) [![GitHub
 tag](https://img.shields.io/github/tag/mcanouil/mc.svg?label=latest%20tag&include_prereleases)](https://github.com/mcanouil/mc)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/mc)](https://CRAN.R-project.org/package=mc)
