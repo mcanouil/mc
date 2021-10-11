@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+![License](https://img.shields.io/github/license/mcanouil/mc)
 [![GitHub tag](https://img.shields.io/github/tag/mcanouil/mc.svg?label=latest tag&include_prereleases)](https://github.com/mcanouil/mc)
 [![CRAN status](https://www.r-pkg.org/badges/version/mc)](https://CRAN.R-project.org/package=mc)
 [![Codecov test coverage](https://codecov.io/gh/mcanouil/mc/branch/main/graph/badge.svg)](https://codecov.io/gh/mcanouil/mc?branch=main)
