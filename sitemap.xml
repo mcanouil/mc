@@ -1,42 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://m.canouil.fr/mc/404.html</loc>
+    <loc>http://m.canouil.fr/mc//index.html</loc>
   </url>
   <url>
-    <loc>http://m.canouil.fr/mc/CODE_OF_CONDUCT.html</loc>
+    <loc>http://m.canouil.fr/mc//reference/check_commit.html</loc>
   </url>
   <url>
-    <loc>http://m.canouil.fr/mc/CONTRIBUTING.html</loc>
+    <loc>http://m.canouil.fr/mc//reference/mc-package.html</loc>
   </url>
   <url>
-    <loc>http://m.canouil.fr/mc/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/SUPPORT.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/authors.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/index.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/news/index.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/reference/check_commit.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/reference/mc-package.html</loc>
-  </url>
-  <url>
-    <loc>http://m.canouil.fr/mc/reference/theme_mc.html</loc>
+    <loc>http://m.canouil.fr/mc//reference/theme_mc.html</loc>
   </url>
 </urlset>
